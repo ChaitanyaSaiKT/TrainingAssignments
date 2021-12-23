@@ -25,12 +25,23 @@ public class Months {
 	}
 	public String delete(String month) {
 		for(int index=0; index<months.length; index++) {
+			if(months[index] != null) {
 			if(months[index].equals(month)) {
 				months[index] = null;
 				return "month deleted";
 			}
 		}
+		}
 		
 		return "month not deleted";
+	}
+	
+	public void update(String oldName, String updatedName) {
+		for (int index = 0; index<months.length; index++) {
+			if(months[index] != null) {
+				if(months[index].equals(oldName))
+					months[index] = updatedName;
+			}
+		}
 	}
 }

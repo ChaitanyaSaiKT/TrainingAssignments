@@ -25,13 +25,23 @@ public class Languages {
 	}
 	public String delete(String language) {
 		for(int index=0; index<languages.length; index++) {
+			if(languages[index] != null) {
 			if(languages[index].equals(language)) {
 				languages[index] = null;
 				return "language deleted";
 			}
 		}
-		
+	}
 		return "language not deleted";
+	}
+	
+	public void update(String oldName, String updatedName) {
+		for (int index = 0; index<languages.length; index++) {
+			if(languages[index] != null) {
+				if(languages[index].equals(oldName))
+					languages[index] = updatedName;
+			}
+		}
 	}
 }
 

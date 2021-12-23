@@ -21,6 +21,9 @@ public class MonthsTester {
 		String resp = month.delete("January");
 		System.out.println(resp);
 		month.printall();
+		
+		month.update("June", "Dune");
+		month.printall();
 	}
 
 }

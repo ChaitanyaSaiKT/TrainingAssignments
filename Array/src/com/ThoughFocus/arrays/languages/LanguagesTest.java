@@ -17,7 +17,7 @@ public class LanguagesTest {
 		language.save("Ruby");
 		language.save("CSS");
 		language.save("Scala");
-		language.save("Dart");
+		language.save("Dirt");
 		language.save("Perl");
 
 		language.printall();
@@ -29,9 +29,9 @@ public class LanguagesTest {
 		String resp1 = language.delete("c++");
 		System.out.println(resp1);
 		language.printall();
-		
-		String resp2 = language.delete("c");
-		System.out.println(resp2);
+	
+		language.update("Dirt", "Dart");
 		language.printall();
+		
 	}
 }
