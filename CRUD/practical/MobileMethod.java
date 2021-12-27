@@ -1,10 +1,10 @@
 package com.ThoughFocus.arrays.practical;
 
 public class MobileMethod {
-	void getAll() {
-
+	public void getAll() {
+		
 	}
-	void getAllByBrandName(String brandName) throws MobileCustomException{
+	public void getAllByBrandName(String brandName) {
 		
 	}
 }

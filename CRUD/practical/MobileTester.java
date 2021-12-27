@@ -35,19 +35,19 @@ public class MobileTester {
 		detail.add(specifications3);
 		
 		detail.getAll();
+		
 		try {
-			detail.getAllByBrandName("LYF");
+			detail.deleteByMobileID(1234); 
 		}
-		catch(MobileCustomException mce){
-			mce.getMessage();
-			
+		catch(CustomException delete){
+			System.out.println(delete.getMessage());		
 		}
 		
-		detail.updateBySerialNumber(87756, "Oppo");
+		detail.updateBySerialNumber(87756, "Lenovo");
+		
 		detail.getAll();
 		
-		detail.deleteByMobileID(1985);
-		detail.getAll();
+		
 	}
 		
 }
