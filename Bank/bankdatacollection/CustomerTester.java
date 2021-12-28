@@ -31,7 +31,7 @@ public class CustomerTester {
 		dto2.setBalance(980000);
 		AddressDTO adto2 = new AddressDTO();
 		adto2.setBuilding("56987");
-		adto2.setArea("GandhiRoad");
+		adto2.setArea("Oldstreet");
 		adto2.setLandmark("opposite SBI");
 		adto2.setCity("Bangalore");
 		adto2.setState("Karnataka");
@@ -53,8 +53,10 @@ public class CustomerTester {
 		System.out.println(data6);
 		float data7 = dao.deposit(10000, 1862856682);
 		System.out.println(data7);
-		CustomerDataDTO data8 = dao.removeByName("Ravi");
+		CustomerDataDTO data8 = dao.updatePincodeByArea("oldstreet", 855458);
 		System.out.println(data8);
+		CustomerDataDTO data9 = dao.removeByName("Ravi");
+		System.out.println(data9);
 	}
 
 }
