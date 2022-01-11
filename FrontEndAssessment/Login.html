@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <script src='js/Employee.js'></script>
+    <link rel="stylesheet" href="css/company.css">
+    <link rel="stylesheet" href="css/Login.css">
+    <style>
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="rect-box1">
+        <div class="logo">
+            <a href="Home.html">
+                <img height="100px" width="275px" src="https://pngimg.com/uploads/webmoney/webmoney_PNG19.png">
+            </a>
+        </div>
+        <div class="name">
+            <div>WebMoney</div>
+
+        </div>
+        <div class="links">
+            <div><a href="https://www.youtube.com/">Youtube</a></div>
+            <div><a href="https://www.facebook.com/">Facebook</a></div>
+            <div><a href="https://mobile.twitter.com/">Twitter</a></div>
+            <div><a href="https://www.instagram.com/">Instagram</a></div>
+
+        </div>
+    </div>
+    <section class="mod">
+        <div class="main">
+            <p class="sign" align="center">Login</p>
+            <form class="form1" action ="Home.html" onsubmit="return validate()" >
+                <label>Username</label>
+                <input class="un " type="text" id="user" placeholder="Username" autocomplete="off">
+                <label>Password</label> 
+                <input class="pass" type="password" id="pass" placeholder="Password">
+                <div style="text-align: center; font-size: 75%;" id="msg"></div>
+                <input class="submit" value="Login" type="submit">
+            </form>
+            
+            <p class="forgot" align="center"><a href="Register.html">New User?</p>
+        </div>
+    </section>
+    <footer>
+        All Rights &copy; 2022
+    </footer>
+
+</body>
+
+</html>

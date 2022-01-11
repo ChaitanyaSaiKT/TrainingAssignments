@@ -1,0 +1,115 @@
+.rect-box1{
+    height: 100px;
+    width: 100%;
+    border: 2px solid;
+    text-align: center;
+    
+}
+.logo{
+    border: 2px solid;
+    height: 100px;
+    width: 300px;
+    display:inline-block;
+    position: absolute;
+    left: 14px;
+}
+.name{
+    border: 2px solid black;
+    height: 100px;
+    width: 898px;
+    display:inline-block;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    left: 319px;
+    font-size: 57px;
+    font-style: Georgia, serif;
+    color: #007dc6;
+}
+.links{
+    border: 2px solid black;
+    height: 100px;
+    width: 300px;
+    display:inline-block;
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    color: #007dc6;
+}
+nav{
+    border: 2px solid;
+    height: 40px;
+    padding-top: 10px;
+    word-spacing: 24px;
+    font-size: 21px;
+    padding-left: 47px;
+    border-color: black;
+    color: #007dc6;
+}
+section{
+    border: 2px solid;
+    height: 523px;
+    border-color: black;   
+}
+.rect_home{
+    height: 222px;
+    width: 944px;
+    border: 2px solid black;
+    border-width: 4px;
+    text-align: center;
+    position: absolute;
+    left: 304px;
+    top: 287px;
+    font-size: 45px;
+    line-height: 206px;
+    color: #007dc6;
+    
+}
+.rect_login{
+    height: 222px;
+    width: 944px;
+    border: 2px solid black;
+    border-width: 4px;
+    text-align: center;
+    position: absolute;
+    left: 304px;
+    top: 287px;
+    font-size: 45px;
+    line-height: 206px;
+    color: #007dc6;
+    
+}
+.rect_add{
+    height: 502px;
+    width: 858px;
+    border: 2px solid black;
+    border-width: 4px;
+    text-align: center;
+    position: absolute;
+    left: 342px;
+    top: 175px;
+    font-size: 24px;
+    line-height: 55px;
+    color: #007dc6;
+}
+footer{
+    border: 2px solid;
+    height: 28px;
+    border-color: black;
+    text-align: center;
+    color: #007dc6;
+    line-height: 28px;
+}
+a{
+    text-decoration: none;
+        color:  #007dc6;
+}
+a:hover{
+    color: black;
+}
+.time{
+    position: absolute ;
+    right: 10px ;
+    word-spacing: 8px; 
+}
+

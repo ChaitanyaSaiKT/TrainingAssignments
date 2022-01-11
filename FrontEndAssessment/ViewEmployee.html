@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>view All</title>
+    <link rel="stylesheet" href="css/company.css">
+    <script src='js/Employee.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        .btn_show {
+            position: absolute;
+            left: 934px;
+            top: 176px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rect-box1">
+        <div class="logo">
+            <a href="Home.html">
+                <img height="100px" width="275px" src="https://pngimg.com/uploads/webmoney/webmoney_PNG19.png">
+            </a>
+        </div>
+        <div class="name">
+            <div>WebMoney</div>
+
+        </div>
+        <div class="links" style="line-height: 22px;">
+            <div><a href="https://www.youtube.com/">Youtube</a></div>
+            <div><a href="https://www.facebook.com/">Facebook</a></div>
+            <div><a href="https://mobile.twitter.com/">Twitter</a></div>
+            <div><a href="https://www.instagram.com/">Instagram</a></div>
+
+        </div>
+    </div>
+    <nav>
+        <a href="AddnewEmployee.html">Add-Employee</a>
+        <a href="RemoveEmployee.html">Remove</a>
+        <a href="SearchEmployee.html">Search</a>
+        <span class="time" id="txt"></span>
+
+    </nav>
+    <section>
+        <div class="col-sm-7" style="border: 2px solid black; margin-left: 324px;margin-top: 14px;">
+            <h2 style="text-align: center;">Employee Data</h2>
+            <div class="row">
+                <div class="col-sm-2" style="color: black;background-color: #900c3f;padding: 10px;">ID</div>
+                <div class="col-sm-4" style="color: black;background-color: #c70039;padding: 10px;">Name</div>
+                <div class="col-sm-2" style="color: black;background-color: #900c3f;padding: 10px;">Salary</div>
+                <div class="col-sm-2" style="color: black;background-color: #c70039;padding: 10px;">Department</div>
+                <div class="col-sm-2" style="color: black;background-color: #900c3f;padding: 10px;">Skill Set</div>
+            </div>
+            <div id="showUsers"></div>
+        </div>
+        <button class="btn_show" onclick="showData()" id="show" type="button">show</button>
+    </section>
+    <footer>
+        All Rights &copy; 2022
+    </footer>
+
+
+</body>
+
+</html>

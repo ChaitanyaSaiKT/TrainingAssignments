@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Search</title>
+    <link rel="stylesheet" href="css/company.css">
+    <script src='js/Employee.js'></script>
+</head>
+
+<body>
+    <div class="rect-box1">
+        <div class="logo">
+            <a href="Home.html">
+                <img height="100px" width="275px" src="https://pngimg.com/uploads/webmoney/webmoney_PNG19.png">
+            </a>
+        </div>
+        <div class="name">
+            <div>WebMoney</div>
+
+        </div>
+        <div class="links">
+            <div><a href="https://www.youtube.com/">Youtube</a></div>
+            <div><a href="https://www.facebook.com/">Facebook</a></div>
+            <div><a href="https://mobile.twitter.com/">Twitter</a></div>
+            <div><a href="https://www.instagram.com/">Instagram</a></div>
+
+        </div>
+    </div>
+    <nav>
+        <a href="AddnewEmployee.html">Add-Employee</a>
+        <a href="ViewEmployee.html">View</a>
+        <a href="RemoveEmployee.html">Remove</a>
+        <span class="time" id="txt"></span>
+    </nav>
+    <section>
+        <div class="rect_home">
+            <label style="font-size: 35px;">Enter Employee ID</label>
+            <input type="number" id="searchid" style="margin-left: 21px;">
+            <input type="submit" onclick="getdetailsbyid()" value="Search"
+                style="position: absolute;top: 143px;left: 591px;">
+            <div style="text-align: center; font-size: 57%;" id="searched"></div>
+        </div>
+
+
+    </section>
+    <footer>
+        All Rights &copy; 2022
+    </footer>
+
+</body>
+
+</html>

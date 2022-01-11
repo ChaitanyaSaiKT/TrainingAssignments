@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="css/company.css">
+    <script src='js/Employee.js'></script>
+    <style>
+        td {
+            padding-left: 36px;
+        }
+
+        table {
+            position: absolute;
+            left: 240px;
+            top: 40px;
+        }
+
+        .btn_add {
+            position: absolute;
+            left: 450px;
+            top: 400px;
+        }
+
+        .btn_clear {
+            position: absolute;
+            left: 536px;
+            top: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rect-box1">
+        <div class="logo">
+            <a href="Home.html">
+                <img height="100px" width="275px" src="https://pngimg.com/uploads/webmoney/webmoney_PNG19.png">
+            </a>
+        </div>
+        <div class="name">
+            <div>WebMoney</div>
+
+        </div>
+        <div class="links">
+            <div><a href="https://www.youtube.com/">Youtube</a></div>
+            <div><a href="https://www.facebook.com/">Facebook</a></div>
+            <div><a href="https://mobile.twitter.com/">Twitter</a></div>
+            <div><a href="https://www.instagram.com/">Instagram</a></div>
+
+        </div>
+    </div>
+    <nav>
+        <a href="ViewEmployee.html">View</a>
+        <a href="RemoveEmployee.html">Remove</a>
+        <a href="SearchEmployee.html">Search</a>
+        <span class="time" id="txt"></span>
+    </nav>
+    <section>
+        <div class="rect_add">
+            <form>
+                <table>
+                    <thead>
+                        <caption>Add new Employee</caption>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Employee ID</td>
+                            <td><input type="number" id="eid"></td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text" id="ename"></td>
+                        </tr>
+                        <tr>
+                            <td>Salary</td>
+                            <td><input type="number" id="esalary"></td>
+                        </tr>
+                        <tr>
+                            <td>Department</td>
+                            <td><label for="Departments"></label>
+                                <input list="stream" id="Departments" name="departments" />
+
+                                <datalist id="stream">
+                                    <option value="IT">
+                                    <option value="HR">
+                                    <option value="Admin">
+                                    <option value="Account">
+                                    <option value="Manager">
+                                </datalist>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Skill</td>
+                            <td><label for="Skills"></label>
+                                <input list="skill" id="Skills" name="skills" />
+
+                                <datalist id="skill">
+                                    <option value="Java">
+                                    <option value="HTML">
+                                    <option value="SQL">
+                                    <option value="UI">
+                                    <option value="Angular">
+                                    <option value="Full Stack">
+                                    <option value="AI">
+                                </datalist>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn_add" onclick="saveData()" id="savebutton" type="button">add</button>
+                <input type="reset" value="clear" class="btn_clear">
+            </form>
+        </div>
+    </section>
+    <footer>
+        All Rights &copy; 2022
+    </footer>
+
+</body>
+
+
+</html>
