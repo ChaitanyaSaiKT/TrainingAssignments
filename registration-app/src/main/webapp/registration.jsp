@@ -26,5 +26,22 @@ Password:         : <input type="password" name="password">
 <input type="submit" value = "Login">
 </form>
 </pre>
+<h1>Update</h1>
+<pre>
+<form action="update.do" method="post">
+UserName:         : <input type="text" name="username">
+Age     :         : <input type="number" name="age">
+<input type="submit" value = "update">
+</form>
+</pre>
+<h1>Delete</h1>
+<pre>
+<form action="delete.do" method="post">
+UserName:         : <input type="text" name="username">
+Password:         : <input type="password" name="password">
+MobileNo          : <input type="text" name="mobileno">
+<input type="submit" value = "delete">
+</form>
+</pre>
 </body>
 </html>

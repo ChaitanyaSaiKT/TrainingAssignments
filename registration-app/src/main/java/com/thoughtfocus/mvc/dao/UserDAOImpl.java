@@ -60,4 +60,54 @@ public class UserDAOImpl implements UserDAO {
 		return false;
 		}
 
+	@Override
+	public boolean update(String username, double age) {
+		String updateagebyusernamequery = "UPDATE UserDTO SET age=:age WHERE username=:nme";
+		Session session = null;
+		Transaction transaction = null;
+		try {
+	    session = sessionFactory.openSession();
+		transaction = session.beginTransaction();
+		Query query;
+		query = session.createQuery(updateagebyusernamequery);
+		query.setParameter("nme",username);
+		query.setParameter("age",age);
+		query.executeUpdate();
+		transaction.commit();
+		}catch(HibernateException e) {
+			e.printStackTrace();
+		}finally {
+			if(session!=null) {
+				session.close();
+			}
+		}
+			
+		return true;
+	}
+
+	@Override
+	public boolean delete(String username, String password, Long mobileno) {
+		String deleteByUsernamePasswordMobilequery = "DELETE FROM UserDTO WHERE username=:nme AND password=:pwd AND mobileno=:mn";
+		Session session = null;
+		Transaction transaction = null;
+		try {
+	    session = sessionFactory.openSession();
+		transaction = session.beginTransaction();
+		Query query;
+		query = session.createQuery(deleteByUsernamePasswordMobilequery);
+		query.setParameter("nme",username);
+		query.setParameter("pwd",password);
+		query.setParameter("mn",mobileno);
+		query.executeUpdate();
+		transaction.commit();
+		}catch(HibernateException e) {
+			e.printStackTrace();
+		}finally {
+			if(session!=null) {
+				session.close();
+			}
+		}
+		return true;
+	}
+
 }
