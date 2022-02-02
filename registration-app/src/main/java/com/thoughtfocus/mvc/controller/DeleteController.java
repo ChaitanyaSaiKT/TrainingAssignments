@@ -15,7 +15,7 @@ public class DeleteController {
 	private DeleteService deleteService;
 
 	@PostMapping("/delete.do")
-	public ModelAndView updateage(@RequestParam String username, @RequestParam String password, @RequestParam Long mobileno) {
+	public ModelAndView delete(@RequestParam String username, @RequestParam String password, @RequestParam Long mobileno) {
 		ModelAndView view = new ModelAndView();
 		try {
 			boolean saveStatus = deleteService.authenticateDelete(username, password, mobileno); 
